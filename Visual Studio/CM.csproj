@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC70AD17-AD3C-45E8-8F19-C5D58895B8F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CM</RootNamespace>
+    <AssemblyName>CM</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.1.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="chat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chat.Designer.cs">
+      <DependentUpon>chat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clan.Designer.cs">
+      <DependentUpon>Clan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="creaza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="creaza.Designer.cs">
+      <DependentUpon>creaza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="creazaClan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="creazaClan.Designer.cs">
+      <DependentUpon>creazaClan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameRoom.Designer.cs">
+      <DependentUpon>gameRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hostSesiune.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hostSesiune.Designer.cs">
+      <DependentUpon>hostSesiune.cs</DependentUpon>
+    </Compile>
+    <Compile Include="intrebari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="intrebari.Designer.cs">
+      <DependentUpon>intrebari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="invite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="invite.Designer.cs">
+      <DependentUpon>invite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="poza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="poza.Designer.cs">
+      <DependentUpon>poza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reg.Designer.cs">
+      <DependentUpon>reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="square.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="square.Designer.cs">
+      <DependentUpon>square.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Traininig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Traininig.Designer.cs">
+      <DependentUpon>Traininig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userInfo.Designer.cs">
+      <DependentUpon>userInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userInfo2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userInfo2.Designer.cs">
+      <DependentUpon>userInfo2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="chat.resx">
+      <DependentUpon>chat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clan.resx">
+      <DependentUpon>Clan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="creaza.resx">
+      <DependentUpon>creaza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="creazaClan.resx">
+      <DependentUpon>creazaClan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameRoom.resx">
+      <DependentUpon>gameRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hostSesiune.resx">
+      <DependentUpon>hostSesiune.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="intrebari.resx">
+      <DependentUpon>intrebari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="invite.resx">
+      <DependentUpon>invite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="poza.resx">
+      <DependentUpon>poza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="reg.resx">
+      <DependentUpon>reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="square.resx">
+      <DependentUpon>square.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Traininig.resx">
+      <DependentUpon>Traininig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userInfo.resx">
+      <DependentUpon>userInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userInfo2.resx">
+      <DependentUpon>userInfo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Database1DataSet.xsc">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Database1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Database1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Database1DataSet.xss">
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="Resources\alert.wav" />
+    <Content Include="Resources\apar.wav" />
+    <Content Include="Resources\arya.jpg" />
+    <Content Include="Resources\banana.jpg" />
+    <Content Include="Resources\banana.png" />
+    <Content Include="Resources\bean.jpg" />
+    <Content Include="Resources\cool1.jpeg" />
+    <None Include="Resources\cover.png" />
+    <Content Include="Resources\cursor.png" />
+    <Content Include="Resources\dany.jpg" />
+    <Content Include="Resources\ghost.jpg" />
+    <Content Include="Resources\joffrey.jpg" />
+    <Content Include="Resources\jonsnow.jpg" />
+    <Content Include="Resources\Normal.cur" />
+    <Content Include="Resources\spider.jpg" />
+    <None Include="Resources\SQ.png" />
+    <None Include="Resources\sq2.png" />
+    <None Include="Resources\sq3.png" />
+    <Content Include="Resources\standard.jpg" />
+    <None Include="Resources\19047097_1429339280467182_410942397_o.jpg" />
+    <None Include="Resources\19021349_1429338050467305_1715865909_n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
